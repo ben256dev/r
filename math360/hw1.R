@@ -30,6 +30,7 @@ freq_table <- table(nonconforming)
 relative_freq_table <- freq_table / length(nonconforming)
 relative_freq_table <- round(relative_freq_table, 4)
 
+cat("(a)\n");
 cat("Nonconforming Frequency\n")
 for (i in names(freq_table))
 {
@@ -42,5 +43,7 @@ for (i in names(relative_freq_table))
  cat(i, relative_freq_table[i], "\n")
 }
 
-
+cat("(b)\n");
+cat("Nonconforming Proportions\n");
+cat("at most four\n");
 sink()
