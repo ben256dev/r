@@ -7,7 +7,7 @@ probabilities <- dbinom(x_values, size = n, prob = p)
 sample_proportions <- x_values / n
 
 result <- data.frame("X"      = x_values,
-                     "X/n"    = sample_proportions,
+                     "X/n"    = round(sample_proportions, 3),
                      "P(X/n)" = round(probabilities, 3))
 
 print(result)
